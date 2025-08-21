@@ -55,6 +55,17 @@ $("aside .close").on("click",function(){
     })
 
 /* ////////////// close close icon///////////////////////*/
+$(document).ready(function () {
+  // Open sidebar
+  $(".iconSlidebar").click(function () {
+    $(".sidebar").addClass("active");
+  });
+
+  // Close sidebar
+  $(".close i").click(function () {
+    $(".sidebar").removeClass("active");
+  });
+});
 
 
 /* ////////////// start close sidebar///////////////////////*/
